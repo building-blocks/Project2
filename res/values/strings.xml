@@ -2,4 +2,5 @@
 <resources>
     <string name="hello">Hello World, TheActivity!</string>
     <string name="app_name">Application name</string>
+    <string name="typehere">Please type your desired string in the input box below</string>
 </resources>
