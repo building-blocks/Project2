@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ImageButton
+    android:id="@+id/android_button"
+    android:layout_width="100dip"
+    android:layout_height="wrap_content"
+    android:src="@drawable/android" />
+    
+    <EditText
+    android:id="@+id/edittext"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+    
+    <CheckBox android:id="@+id/checkbox"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:text="check it out" />
 
-    <TextView android:id="@+id/dateDisplay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""/>
+	<RadioGroup android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
 
-    <Button android:id="@+id/pickDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Change the date"/>
+		<RadioButton android:id="@+id/radio_red"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:text="Red" />
 
+		<RadioButton android:id="@+id/radio_blue"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Blue" />
+
+	</RadioGroup>
+    
+    <ToggleButton android:id="@+id/togglebutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    
 </LinearLayout>
