@@ -63,7 +63,7 @@ public class TheActivity extends Activity {
             public void onClick(View v) {
                 // Perform action on clicks
                 if (togglebutton.isChecked()) {
-                    Toast.makeText(TheActivity.this, "ON", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TheActivity.this, "ONNN", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(TheActivity.this, "OFF", Toast.LENGTH_SHORT).show();
                 }
