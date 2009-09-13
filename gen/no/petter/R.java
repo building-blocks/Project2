@@ -8,6 +8,9 @@
 package no.petter;
 
 public final class R {
+    public static final class array {
+        public static final int planets=0x7f040000;
+    }
     public static final class attr {
     }
     public static final class drawable {
@@ -15,19 +18,14 @@ public final class R {
         public static final int icon=0x7f020001;
     }
     public static final class id {
-        public static final int android_button=0x7f050000;
-        public static final int checkbox=0x7f050002;
-        public static final int edittext=0x7f050001;
-        public static final int radio_blue=0x7f050004;
-        public static final int radio_red=0x7f050003;
-        public static final int togglebutton=0x7f050005;
+        public static final int spinner=0x7f060000;
     }
     public static final class layout {
         public static final int main=0x7f030000;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int hello=0x7f040000;
-        public static final int typehere=0x7f040002;
+        public static final int app_name=0x7f050001;
+        public static final int hello=0x7f050000;
+        public static final int planet_prompt=0x7f050002;
     }
 }
