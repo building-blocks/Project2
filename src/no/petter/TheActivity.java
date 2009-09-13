@@ -1,12 +1,11 @@
 package no.petter;
 
-import android.app.Activity;
+import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.Spinner;
 
-public class TheActivity extends Activity {
+public class TheActivity extends ListActivity {
 	static final String[] COUNTRIES = new String[] {
 		  "Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra",
 		  "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina",
@@ -56,12 +55,11 @@ public class TheActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        
-        AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.edit);
-        ArrayAdapter adapter = new ArrayAdapter(this,
-                android.R.layout.simple_dropdown_item_1line, COUNTRIES);
-        textView.setAdapter(adapter);
+//        setContentView(R.layout.main);
+
+        setListAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, COUNTRIES));
+        getListView().setTextFilterEnabled(true);
 
     }
 }
